@@ -1,0 +1,64 @@
+<!--this is version 8/Final_ of moody-kitten
+need to add feature that mood/affection persists through page refresh
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Moody Kittens | Sensei </title>
+  <link rel="shortcut icon" href="moody-logo.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+</head>
+
+<body>
+  <header class="bg-dark d-flex align-items-center p-1 space-between">
+    <img src="sylvester.jpg" height="60" alt="Moody Kittens">
+    <h1 class="h1-moody">Moody Kittens</h1>
+    <form class="" onsubmit="addKitten(event)">
+      <div id="reset-input">
+        <div class="d-flex">
+          <input id="input-add-kitten" class="input-kitten-name" placeholder="Enter the Name of a New Kitten"
+            type="text" name="kittenName" />
+          <button id='btn-add-kitten' class="btn-image-cat" type="submit">
+            <span class="span-image-cat">ADD KITTEN</span>
+
+            <img class='btn-image-cat' src="Fasticon-Cat-Cat-Orange.ico">
+          </button>
+
+        </div>
+      </div>
+    </form>
+  </header>
+  <main class="container">
+    <div id="welcome" class="d-flex justify-content-center">
+      <div class="card p-2 text-center w-50">
+        <img src="sylvester.jpg" height="250" alt="Moody Kittens">
+        <div class="mt-2">
+          <b class="text-center">Hello Unlucky One!</b>
+          <p>Do you want to play?</p>
+          <img class="img-tweety" src="tweety-bird-clipart-27.jpg" />
+          <br>
+          <button class="btn-get-started" onclick="getStarted()">Get Started</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="kittens-list" id="start-over">
+
+    </div>
+  </main>
+  <footer class="card bg-dark text-light">
+    <p class="p-footer">Created by Sensei</p>
+    <p class="p-footer">A.K.A. John S. Haworth</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
